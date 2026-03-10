@@ -1,4 +1,4 @@
-package bai2;
+package tinhtienluong;
 
 import java.util.Scanner;
 

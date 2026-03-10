@@ -1,3 +1,4 @@
+package hinhve;
 
 public class hinhve {
     public static void main(String[] args) {

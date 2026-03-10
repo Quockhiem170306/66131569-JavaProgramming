@@ -1,4 +1,4 @@
-package bai2;
+package timx;
 
 import java.util.Scanner;
 

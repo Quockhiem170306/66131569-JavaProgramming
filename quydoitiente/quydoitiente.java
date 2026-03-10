@@ -1,4 +1,4 @@
-package bai2;
+package quydoitiente;
 import java.util.Scanner;
 
 public class quydoitiente {
