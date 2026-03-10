@@ -16,5 +16,6 @@ public class quydoitiente {
         tongtienRV = eur * RD;
         System.out.println("tong so tien USD sang VND la:" + tongtienDV + " VND");
         System.out.println("tong so tien EUR sang VND la:" + tongtienRV + " VND");
+        scanner.close();
     }
 }
