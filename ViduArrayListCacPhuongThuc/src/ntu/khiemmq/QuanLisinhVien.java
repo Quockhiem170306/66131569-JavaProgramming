@@ -1,6 +1,7 @@
 package ntu.khiemmq;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class QuanLisinhVien {
 	private ArrayList<SinhVien> danhSach;
@@ -47,5 +48,31 @@ public class QuanLisinhVien {
             tongDiem += sv.getDiem();
         }
         return tongDiem / danhSach.size();
+    }
+    public List<SinhVien> locSinhVienTheoDiem(double diemSanh) {
+        List<SinhVien> dsLoc = new ArrayList<>();
+        for (SinhVien sv : danhSach) {
+            if (sv.getDiem() >= diemSanh) {
+                dsLoc.add(sv);
+            }
+        }
+        return dsLoc;
+    }
+    public void sapXepTheoDiem() {
+        danhSach.sort((sv1, sv2) -> Double.compare(sv2.getDiem(), sv1.getDiem()));
+        
+    }
+    public void xoaSinhVien(String maSV) {
+        danhSach.removeIf(sv -> sv.getMaSV().equals(maSV));
+    }
+    public void hienThiHaiSinhVienDauTien() {
+        if (danhSach.size() >= 2) {
+            List<SinhVien> subList = danhSach.subList(0, 2);//dung danh sach con de lay 2 sinh viwn dau tien
+            for (SinhVien sv : subList) {
+                System.out.println(sv.toString());
+            }
+        } else {
+            hienThiDanhSach(); // Nếu ít hơn 2 người thì in hết
+        }
     }
 }
