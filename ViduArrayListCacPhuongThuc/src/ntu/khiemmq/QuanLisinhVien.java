@@ -28,5 +28,16 @@ public class QuanLisinhVien {
         }
         return null; // Không thấy trả về null
     }
+    public SinhVien timDiemCaoNhat() {
+        if (danhSach.isEmpty()) return null;
+        
+        SinhVien svMax = danhSach.get(0);
+        for (SinhVien sv : danhSach) {
+            if (sv.getDiem() > svMax.getDiem()) {
+                svMax = sv;
+            }
+        }
+        return svMax;
+    }
     
 }
