@@ -19,6 +19,11 @@ public class runMain {
 			dssonguyen.add(tam);
 			
 		}
+		System.out.print("danh sach vua nhap la");
+		for(int i =0; i < dssonguyen.size();i++) {
+			Integer tam = dssonguyen.get(i);
+			System.out.printf(tam+ " ");
+		}
 	}
 
 }
