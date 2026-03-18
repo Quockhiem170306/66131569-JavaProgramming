@@ -27,8 +27,9 @@ public class runMain {
 		int soluongptuchan= 0;
 		for(int i= 0;i < dssonguyen.size();i++) {
 			Integer tam = dssonguyen.get(i);
-			if(tam % 2 == 0) soluongptuchan= soluongptuchan +1;
+			if(tam % 2 == 0) soluongptuchan = soluongptuchan+1;
 		}
+		System.out.print("\n so luong phan tu chan la: "+ soluongptuchan);
 	}
 
 }
