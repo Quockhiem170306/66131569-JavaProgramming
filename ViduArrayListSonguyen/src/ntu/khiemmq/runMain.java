@@ -1,4 +1,4 @@
-package ViduArrayListSonguyen.src.ntu.khiemmq;
+package ntu.khiemmq;
 
 import java.util.ArrayList;
 import java.util.Scanner;
