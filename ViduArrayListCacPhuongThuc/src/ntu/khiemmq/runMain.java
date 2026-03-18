@@ -1,4 +1,4 @@
-package ViduArrayListCacPhuongThuc.src.ntu.khiemmq;
+package ntu.khiemmq;
 
 public class runMain {
 
@@ -19,6 +19,7 @@ public class runMain {
         for (SinhVien sv : duLieuMau) {
             qlsv.themSinhVien(sv);
         }
+        qlsv.hienThiDanhSach();
 	}
 
 }

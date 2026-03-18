@@ -1,4 +1,4 @@
-package ViduArrayListCacPhuongThuc.src.ntu.khiemmq;
+package ntu.khiemmq;
 
 import java.util.ArrayList;
 
