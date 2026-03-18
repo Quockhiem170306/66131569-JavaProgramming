@@ -12,6 +12,12 @@ public class SinhVien {
         this.diem = diem;
     }
 
+    public String getMaSV () {
+    	return maSV;
+    }
+    public double getDiem() {
+    	return diem;
+    }
     // Hàm để in thông tin sinh viên
     public String toString() {
         return "Mã SV: " + maSV + " | Tên: " + hoTen + " | Điểm: " + diem;

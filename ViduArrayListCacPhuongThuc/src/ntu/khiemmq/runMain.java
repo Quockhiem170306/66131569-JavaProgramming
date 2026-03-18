@@ -20,6 +20,10 @@ public class runMain {
             qlsv.themSinhVien(sv);
         }
         qlsv.hienThiDanhSach();
+     // Tìm sinh viên
+        System.out.println("\n=== TÌM KIẾM SINH VIÊN ===");
+        SinhVien sv = qlsv.timTheoMa("SV003");
+        System.out.println("Tìm SV003: " + (sv != null ? sv : "Không tìm thấy"));
 	}
 
 }
