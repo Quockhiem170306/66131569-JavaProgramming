@@ -1,5 +1,7 @@
 package ntu.khiemmq;
 
+import java.util.List;
+
 public class runMain {
 
 	public static void main(String[] args) {
@@ -24,6 +26,30 @@ public class runMain {
         System.out.println("\n=== TÌM KIẾM SINH VIÊN ===");
         SinhVien sv = qlsv.timTheoMa("SV005");
         System.out.println("Tìm SV003: " + (sv != null ? sv : "Không tìm thấy"));
+        System.out.println("\n=== ĐIỂM TRUNG BÌNH LỚP ===");
+        System.out.printf("Điểm TB lớp: %.2f\n", qlsv.tinhDiemTrungBinh()); 
+        
+        // Lọc sinh viên
+        System.out.println("\n=== SINH VIÊN CÓ ĐIỂM >= 8.0 ===");
+        List<SinhVien> svGioi = qlsv.locSinhVienTheoDiem(8.0);
+        if (!svGioi.isEmpty()) {
+            svGioi.forEach(System.out::println);
+        } else {
+            System.out.println("Không có sinh viên nào đạt điểm >= 8.0");
+        }
+        
+        // Sắp xếp
+        System.out.println("\n=== DANH SÁCH SAU KHI SẮP XẾP (GIẢM DẦN THEO ĐIỂM) ===");
+        qlsv.sapXepTheoDiem();
+        qlsv.hienThiDanhSach();
+        
+        // Xóa sinh viên
+        System.out.println("\n=== XÓA SINH VIÊN ===");
+        qlsv.xoaSinhVien("SV002");
+        qlsv.hienThiDanhSach();
+        
+        // Sử dụng subList
+        System.out.println("\n=== HAI SINH VIÊN ĐẦU TIÊN ===");
+        qlsv.hienThiHaiSinhVienDauTien();
 	}
-
 }
