@@ -12,7 +12,7 @@ public class runMain {
 		Scanner BanPhim = new Scanner(System.in);
 		
 		for(int i =0;i<10;i++) {
-			System.out.print("nhap phan tu thu:" + i);
+			//System.out.print("nhap phan tu thu:" + i);
 			System.out.print("a["+"]=" );
 			
 			Integer tam = BanPhim.nextInt();
