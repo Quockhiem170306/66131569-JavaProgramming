@@ -20,4 +20,13 @@ public class QuanLisinhVien {
             System.out.println(sv.toString());
         }
     }
+    public SinhVien timTheoMa(String maSV) {
+        for (SinhVien sv : danhSach) {
+            if (sv.getMaSV().equals(maSV)) {
+                return sv; // Tìm thấy thì trả về sinh viên đó
+            }
+        }
+        return null; // Không thấy trả về null
+    }
+    
 }
