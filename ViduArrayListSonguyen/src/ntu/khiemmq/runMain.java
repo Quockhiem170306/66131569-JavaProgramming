@@ -29,7 +29,13 @@ public class runMain {
 			Integer tam = dssonguyen.get(i);
 			if(tam % 2 == 0) soluongptuchan = soluongptuchan+1;
 		}
-		System.out.print("\n so luong phan tu chan la: "+ soluongptuchan);
+		int tong = 0;
+		for(int i= 0; i< dssonguyen.size();i++) {
+			Integer tam = dssonguyen.get(i);
+			tong =tong + tam;
+		}
+		System.out.print("\nso luong phan tu chan la: "+soluongptuchan);
+		System.out.print("\ntong cac phan tu la: "+tong);
 	}
 
 }
