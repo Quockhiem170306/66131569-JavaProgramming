@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="baitoanpheptinh/|OOP-getter-setter/" kind="src" path=""/>
+	<classpathentry kind="src" path="baitoanpheptinh"/>
+	<classpathentry kind="src" path="OOP-getter-setter"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
