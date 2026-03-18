@@ -39,5 +39,13 @@ public class QuanLisinhVien {
         }
         return svMax;
     }
-    
+    public double tinhDiemTrungBinh() {
+        if (danhSach.isEmpty()) return 0;
+        
+        double tongDiem = 0;
+        for (SinhVien sv : danhSach) {
+            tongDiem += sv.getDiem();
+        }
+        return tongDiem / danhSach.size();
+    }
 }

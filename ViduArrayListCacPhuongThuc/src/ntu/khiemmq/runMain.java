@@ -22,7 +22,7 @@ public class runMain {
         qlsv.hienThiDanhSach();
      // Tìm sinh viên
         System.out.println("\n=== TÌM KIẾM SINH VIÊN ===");
-        SinhVien sv = qlsv.timTheoMa("SV003");
+        SinhVien sv = qlsv.timTheoMa("SV005");
         System.out.println("Tìm SV003: " + (sv != null ? sv : "Không tìm thấy"));
 	}
 
