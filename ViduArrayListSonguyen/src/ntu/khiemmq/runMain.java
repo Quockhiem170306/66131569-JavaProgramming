@@ -13,7 +13,7 @@ public class runMain {
 		
 		for(int i =0;i<10;i++) {
 			//System.out.print("nhap phan tu thu:" + i);
-			System.out.print("a["+"]=" );
+			System.out.print("a["+i+ "]= " );
 			
 			Integer tam = BanPhim.nextInt();
 			dssonguyen.add(tam);
