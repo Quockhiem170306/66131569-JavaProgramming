@@ -20,5 +20,6 @@ public class NhanVien {
 	@Override
 	public String toString() {
 		return "NhanVien \nmaNV=" + maNV + " \nHoten= " + Hoten + "\nluongCB=" + luongCB;
+		
 	}
 }
