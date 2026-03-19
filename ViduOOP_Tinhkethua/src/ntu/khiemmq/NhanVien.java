@@ -19,6 +19,6 @@ public class NhanVien {
 	}
 	@Override
 	public String toString() {
-		return "NhanVien [maNV=" + maNV + ", Hoten=" + Hoten + ", luongCB=" + luongCB + "]";
+		return "NhanVien \nmaNV=" + maNV + " \nHoten= " + Hoten + "\nluongCB=" + luongCB;
 	}
 }
